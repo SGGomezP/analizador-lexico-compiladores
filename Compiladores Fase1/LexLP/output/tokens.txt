@@ -1,0 +1,5 @@
+<NUM_INT>	lexema=20	linea=1	columna=1
+<NUM_INT>	lexema=30	linea=1	columna=6
+<NUM_INT>	lexema=100	linea=2	columna=2
+<NUM_DEC>	lexema=15.5	linea=3	columna=1
+<NUM_INT>	lexema=7	linea=3	columna=8

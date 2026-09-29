@@ -1,0 +1,1 @@
+# La tabla de simbolos se implementa en la Fase 2 (identificadores).

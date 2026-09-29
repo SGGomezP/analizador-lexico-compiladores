@@ -1,0 +1,3 @@
+Linea 1, Columna 4: caracter no reconocido '@'
+Linea 2, Columna 1: caracter no reconocido '#'
+Linea 3, Columna 6: caracter no reconocido '&'
