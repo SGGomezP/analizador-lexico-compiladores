@@ -38,3 +38,4 @@
 7 letra
 8 aprobado
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

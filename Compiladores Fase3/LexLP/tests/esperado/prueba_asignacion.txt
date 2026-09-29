@@ -8,3 +8,4 @@
 2 a
 3 b
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

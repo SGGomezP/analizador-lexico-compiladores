@@ -15,3 +15,4 @@
 1 b
 2 x
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

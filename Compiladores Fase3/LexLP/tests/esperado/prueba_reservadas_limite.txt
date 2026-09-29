@@ -13,3 +13,4 @@
 8 int2
 9 _int
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

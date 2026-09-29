@@ -15,3 +15,4 @@ Linea 1, Columna 7: operador incompleto (se esperaba '&&') '&'
 Linea 2, Columna 7: operador incompleto (se esperaba '||') '|'
 Linea 5, Columna 7: operador incompleto (se esperaba '&&') '&'
 Linea 6, Columna 5: operador incompleto (se esperaba '||') '|'
+ANALISIS LEXICO INCORRECTO: se encontraron 4 errores lexicos.

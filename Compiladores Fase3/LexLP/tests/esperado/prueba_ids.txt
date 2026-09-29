@@ -17,3 +17,4 @@
 10 _
 11 a
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

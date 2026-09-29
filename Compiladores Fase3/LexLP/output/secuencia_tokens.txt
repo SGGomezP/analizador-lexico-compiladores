@@ -1,6 +1,6 @@
 <VOID> <MAIN> <(> <)> <{>
 <INT> <ID, 0> <=> <NUM_INT> <;>
-<FLOAT> <ID, 1> <=> <NUM_INT> <;>
+<FLOAT> <ID, 1> <=> <;>
 <IF> <(> <ID, 0> <COMP, >=> <NUM_INT> <ID, 1> <COMP, >> <NUM_INT> <)> <{>
 <PRINTLN> <(>
 <}>

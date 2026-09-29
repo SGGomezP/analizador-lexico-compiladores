@@ -27,3 +27,4 @@ Linea 5, Columna 5: caracter no reconocido '''
 Linea 5, Columna 7: caracter no reconocido '''
 Linea 6, Columna 7: caracter no reconocido '\'
 Linea 7, Columna 7: caracter no reconocido '.'
+ANALISIS LEXICO INCORRECTO: se encontraron 11 errores lexicos.

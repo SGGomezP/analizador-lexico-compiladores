@@ -12,3 +12,4 @@
 4 b
 5 c
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

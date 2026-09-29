@@ -11,3 +11,4 @@
 5 f
 6 x
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

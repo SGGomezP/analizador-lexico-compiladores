@@ -1,3 +1,4 @@
 --- Tokens (0) ---
 --- Tabla de simbolos (0) ---
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

@@ -12,3 +12,4 @@
 0 edad
 1 promedio
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

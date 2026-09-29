@@ -24,7 +24,15 @@ for f in tests/validas/*.lp tests/invalidas/*.lp tests/limite/*.lp; do
     esperado="tests/esperado/$nombre.txt"
     total=$((total + 1))
 
-    ./lexlp "$f" --silencioso --salida "$salida" || { fallidas="$fallidas $nombre"; continue; }
+    ./lexlp "$f" --silencioso --salida "$salida"
+    rc=$?
+    # 0 = sin errores lexicos, 2 = con errores lexicos (ambos son normales);
+    # cualquier otro codigo es una falla real del programa.
+    if [ $rc -ne 0 ] && [ $rc -ne 2 ]; then
+        fallidas="$fallidas $nombre"
+        echo "[FALLO]  $f (codigo de salida $rc)"
+        continue
+    fi
 
     if [ $ACTUALIZAR -eq 1 ]; then
         cp "$salida/resultado.txt" "$esperado"

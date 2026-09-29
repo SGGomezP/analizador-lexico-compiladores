@@ -8,3 +8,4 @@
 2 x
 3 y
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

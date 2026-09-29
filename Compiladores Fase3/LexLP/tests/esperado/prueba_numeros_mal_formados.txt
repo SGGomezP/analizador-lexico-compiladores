@@ -1,0 +1,18 @@
+--- Tokens (14) ---
+<ID, 0> <=> <+> <NUM_INT> <;>
+<ID, 1> <=> <NUM_DEC> <+> <;>
+<ID, 2> <=> <NUM_DEC> <;>
+--- Tabla de simbolos (3) ---
+0 x
+1 y
+2 z
+--- Errores lexicos (8) ---
+Linea 1, Columna 1: numero decimal invalido (mas de un punto decimal) '12.3.4'
+Linea 2, Columna 1: numero decimal invalido (mas de un punto decimal) '1.2.3.4'
+Linea 3, Columna 1: numero decimal invalido (mas de un punto decimal) '5..3'
+Linea 4, Columna 1: numero decimal invalido (falta la parte decimal despues del punto) '10.'
+Linea 5, Columna 1: numero decimal invalido (falta la parte entera) '.5'
+Linea 6, Columna 1: numero decimal invalido (mas de un punto decimal) '3.14.'
+Linea 7, Columna 5: numero decimal invalido (mas de un punto decimal) '12.3.4'
+Linea 8, Columna 11: numero decimal invalido (falta la parte decimal despues del punto) '2.'
+ANALISIS LEXICO INCORRECTO: se encontraron 8 errores lexicos.

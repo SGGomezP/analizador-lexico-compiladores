@@ -96,19 +96,43 @@ Token Lexer::reconocerNumero() {
         lexema += avanzar();
     }
 
+    bool esDecimal = false;
+
     // ¿Es NUM_DEC? Requiere '.' seguido de al menos un dígito: D+\.D+
     if (!finDeArchivo() && caracterActual() == '.' && esDigito(verSiguiente())) {
+        esDecimal = true;
         lexema += avanzar(); // consume '.'
         while (!finDeArchivo() && esDigito(caracterActual())) {
             lexema += avanzar();
         }
-        return Token(TokenType::NUM_DEC, lexema, lineaInicio, columnaInicio);
     }
 
-    // Si no hay '.' seguido de dígito, es simplemente un NUM_INT.
-    // (Un '.' suelto se deja sin consumir; será reportado como error léxico
-    // en la siguiente llamada a siguienteToken().)
-    return Token(TokenType::NUM_INT, lexema, lineaInicio, columnaInicio);
+    // NUMERO MAL FORMADO: si después del número viene otro '.', el lexema
+    // completo (dígitos y puntos) NO es un número válido. Ejemplos:
+    //   12.3.4   1.2.3.4   5..3   10.
+    // Se consume TODO el bloque de dígitos y puntos y se reporta UN solo error
+    // (en vez de aceptar "12.3" como NUM_DEC y dejar ".4" suelto).
+    if (!finDeArchivo() && caracterActual() == '.') {
+        while (!finDeArchivo() && (esDigito(caracterActual()) || caracterActual() == '.')) {
+            lexema += avanzar();
+        }
+        return registrarError(lineaInicio, columnaInicio, lexema, motivoNumeroMalFormado(lexema));
+    }
+
+    return Token(esDecimal ? TokenType::NUM_DEC : TokenType::NUM_INT,
+                 lexema, lineaInicio, columnaInicio);
+}
+
+std::string Lexer::motivoNumeroMalFormado(const std::string& lexema) {
+    int puntos = 0;
+    for (char ch : lexema) if (ch == '.') puntos++;
+    if (lexema.empty() || lexema[0] == '.') {
+        return "numero decimal invalido (falta la parte entera)";
+    }
+    if (puntos == 1 && lexema.back() == '.') {
+        return "numero decimal invalido (falta la parte decimal despues del punto)";
+    }
+    return "numero decimal invalido (mas de un punto decimal)";
 }
 
 // ---------------------------------------------------------------------------
@@ -168,7 +192,7 @@ Token Lexer::reconocerTexto() {
     // Llegó fin de línea o fin de archivo sin cerrar la comilla: error léxico.
     // Se reporta UNA sola vez desde la comilla hasta el final de la línea, para
     // no generar errores en cascada con el contenido del texto.
-    return registrarError(lineaInicio, columnaInicio, lexema, "texto sin cerrar");
+    return registrarError(lineaInicio, columnaInicio, lexema, "texto sin cerrar (falta la comilla de cierre)");
 }
 
 // ---------------------------------------------------------------------------
@@ -298,6 +322,17 @@ Token Lexer::siguienteToken() {
 
     if (c == '"') {
         return reconocerTexto();
+    }
+
+    // Número que empieza con '.' (p. ej. .5): no cumple D+\.D+ -> un solo error.
+    if (c == '.' && esDigito(verSiguiente())) {
+        int lineaError = linea;
+        int columnaError = columna;
+        std::string lex;
+        while (!finDeArchivo() && (esDigito(caracterActual()) || caracterActual() == '.')) {
+            lex += avanzar();
+        }
+        return registrarError(lineaError, columnaError, lex, motivoNumeroMalFormado(lex));
     }
 
     // Fase 3: comentario "//" (debe probarse ANTES que el operador '/').

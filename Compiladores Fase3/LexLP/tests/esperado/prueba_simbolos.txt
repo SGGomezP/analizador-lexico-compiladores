@@ -9,3 +9,4 @@
 2 b
 3 v
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

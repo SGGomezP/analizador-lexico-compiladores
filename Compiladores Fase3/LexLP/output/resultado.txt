@@ -1,7 +1,7 @@
---- Tokens (37) ---
+--- Tokens (36) ---
 <VOID> <MAIN> <(> <)> <{>
 <INT> <ID, 0> <=> <NUM_INT> <;>
-<FLOAT> <ID, 1> <=> <NUM_INT> <;>
+<FLOAT> <ID, 1> <=> <;>
 <IF> <(> <ID, 0> <COMP, >=> <NUM_INT> <ID, 1> <COMP, >> <NUM_INT> <)> <{>
 <PRINTLN> <(>
 <}>
@@ -16,7 +16,8 @@
 4 o
 --- Errores lexicos (5) ---
 Linea 2, Columna 19: caracter no reconocido '@'
-Linea 3, Columna 20: caracter no reconocido '.'
+Linea 3, Columna 18: numero decimal invalido (falta la parte decimal despues del punto) '15.'
 Linea 4, Columna 20: operador incompleto (se esperaba '&&') '&'
-Linea 5, Columna 17: texto sin cerrar '"Mayor de edad);'
+Linea 5, Columna 17: texto sin cerrar (falta la comilla de cierre) '"Mayor de edad);'
 Linea 8, Columna 11: caracter no reconocido 'ñ'
+ANALISIS LEXICO INCORRECTO: se encontraron 5 errores lexicos.

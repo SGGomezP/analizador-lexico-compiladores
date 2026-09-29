@@ -3,6 +3,7 @@
 #include <sstream>
 #include <string>
 #include <map>
+#include <iomanip>
 #include "Lexer.h"
 #include "Token.h"
 #include "SymbolTable.h"
@@ -78,6 +79,42 @@ static std::string tablaTexto(const SymbolTable& tabla) {
     return out.str();
 }
 
+// Tabla de errores léxicos (columnas alineadas): N°, línea, columna, lexema, descripción.
+static std::string tablaErrores(const std::vector<ErrorLexico>& errores) {
+    std::ostringstream out;
+    size_t anchoLexema = std::string("Lexema").size();
+    for (const ErrorLexico& e : errores) {
+        anchoLexema = std::max(anchoLexema, e.lexema.size());
+    }
+    // Se usa "'" ... "'" solo para lexemas; el ancho es aproximado (bytes).
+    out << std::left
+        << std::setw(4)  << "N"
+        << std::setw(8)  << "Linea"
+        << std::setw(9)  << "Columna"
+        << std::setw(static_cast<int>(anchoLexema) + 2) << "Lexema"
+        << "Descripcion\n";
+    out << std::string(4 + 8 + 9 + anchoLexema + 2 + 40, '-') << "\n";
+    int n = 1;
+    for (const ErrorLexico& e : errores) {
+        out << std::left
+            << std::setw(4)  << n++
+            << std::setw(8)  << e.linea
+            << std::setw(9)  << e.columna
+            << std::setw(static_cast<int>(anchoLexema) + 2) << e.lexema
+            << e.motivo << "\n";
+    }
+    return out.str();
+}
+
+// Mensaje final: indica si el análisis léxico fue correcto o no.
+static std::string veredicto(const std::vector<ErrorLexico>& errores) {
+    if (errores.empty()) {
+        return "ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.";
+    }
+    return "ANALISIS LEXICO INCORRECTO: se encontraron " + std::to_string(errores.size()) +
+           (errores.size() == 1 ? " error lexico." : " errores lexicos.");
+}
+
 // Reporte compacto y DETERMINISTA (no incluye rutas ni fechas): es lo que se
 // compara contra tests/esperado/ en las pruebas automáticas.
 static std::string resultadoCompacto(const std::vector<Token>& tokens,
@@ -94,6 +131,7 @@ static std::string resultadoCompacto(const std::vector<Token>& tokens,
     for (const ErrorLexico& e : errores) {
         out << textoError(e) << "\n";
     }
+    out << veredicto(errores) << "\n";
     return out.str();
 }
 
@@ -175,13 +213,11 @@ int main(int argc, char* argv[]) {
             std::cout << tablaTexto(tabla);
         }
 
-        std::cout << "\n--- Errores lexicos (" << errores.size() << ") ---\n";
+        std::cout << "\n--- Tabla de errores lexicos (" << errores.size() << ") ---\n";
         if (errores.empty()) {
             std::cout << "(sin errores)\n";
         } else {
-            for (const ErrorLexico& e : errores) {
-                std::cout << textoError(e) << "\n";
-            }
+            std::cout << tablaErrores(errores);
         }
 
         // Resumen: cuántos tokens hay de cada categoría.
@@ -211,16 +247,18 @@ int main(int argc, char* argv[]) {
     escribirArchivo(base + "secuencia_tokens.txt", secuenciaTokens(tokens));
     escribirArchivo(base + "tabla_simbolos.txt", tablaTexto(tabla));
     {
-        std::ostringstream out;
-        for (const ErrorLexico& e : errores) out << textoError(e) << "\n";
-        escribirArchivo(base + "errores.txt", out.str());
+        std::string contenido = errores.empty() ? std::string("(sin errores)\n") : tablaErrores(errores);
+        escribirArchivo(base + "errores.txt", contenido + "\n" + veredicto(errores) + "\n");
     }
     escribirArchivo(base + "resultado.txt", resultadoCompacto(tokens, tabla, errores));
 
     if (!silencioso) {
+        std::cout << "\n" << veredicto(errores) << "\n";
         std::cout << "\nSalidas generadas en " << base
                   << ": tokens.txt, secuencia_tokens.txt, tabla_simbolos.txt, errores.txt, resultado.txt\n";
     }
 
-    return 0;
+    // Código de salida: 0 = análisis correcto, 2 = hubo errores léxicos
+    // (1 = no se pudo abrir el archivo / opción inválida).
+    return errores.empty() ? 0 : 2;
 }

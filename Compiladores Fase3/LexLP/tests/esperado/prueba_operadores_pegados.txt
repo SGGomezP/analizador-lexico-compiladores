@@ -22,3 +22,4 @@
 --- Errores lexicos (2) ---
 Linea 14, Columna 4: operador incompleto (se esperaba '&&') '&'
 Linea 15, Columna 4: operador incompleto (se esperaba '||') '|'
+ANALISIS LEXICO INCORRECTO: se encontraron 2 errores lexicos.

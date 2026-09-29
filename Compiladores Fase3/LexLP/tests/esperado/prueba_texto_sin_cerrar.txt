@@ -6,5 +6,6 @@
 --- Tabla de simbolos (1) ---
 0 x
 --- Errores lexicos (2) ---
-Linea 1, Columna 9: texto sin cerrar '"Hola);'
-Linea 4, Columna 9: texto sin cerrar '"otro sin cerrar'
+Linea 1, Columna 9: texto sin cerrar (falta la comilla de cierre) '"Hola);'
+Linea 4, Columna 9: texto sin cerrar (falta la comilla de cierre) '"otro sin cerrar'
+ANALISIS LEXICO INCORRECTO: se encontraron 2 errores lexicos.

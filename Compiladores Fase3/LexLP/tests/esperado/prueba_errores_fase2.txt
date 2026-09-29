@@ -16,8 +16,9 @@
 --- Errores lexicos (7) ---
 Linea 1, Columna 5: caracter no reconocido '@'
 Linea 2, Columna 1: caracter no reconocido '$'
-Linea 3, Columna 1: texto sin cerrar '"texto sin cerrar'
-Linea 4, Columna 13: texto sin cerrar '"abierto'
+Linea 3, Columna 1: texto sin cerrar (falta la comilla de cierre) '"texto sin cerrar'
+Linea 4, Columna 13: texto sin cerrar (falta la comilla de cierre) '"abierto'
 Linea 5, Columna 8: caracter no reconocido 'ñ'
 Linea 6, Columna 1: caracter no reconocido '#'
-Linea 7, Columna 1: texto sin cerrar '"ultimo sin cerrar'
+Linea 7, Columna 1: texto sin cerrar (falta la comilla de cierre) '"ultimo sin cerrar'
+ANALISIS LEXICO INCORRECTO: se encontraron 7 errores lexicos.

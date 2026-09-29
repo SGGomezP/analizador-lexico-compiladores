@@ -29,7 +29,7 @@ Compiladores/                      <- raíz del repo
 ## Antes de subir
 
 * [ ] Completar la tabla **Integrantes** del README.
-* [ ] `make clean && make && ./correr_pruebas.sh` → 30/30 correctas.
+* [ ] `make clean && make && ./correr_pruebas.sh` → 31/31 correctas.
 * [ ] No subir el binario (`lexlp`, `lexlp.exe`): ya está en `.gitignore`.
 * [ ] Verificar que el repositorio sea **público** o que la profesora tenga acceso.
 * [ ] Cada integrante ha subido el link a Classroom.

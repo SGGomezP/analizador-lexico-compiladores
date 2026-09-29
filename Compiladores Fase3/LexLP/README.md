@@ -104,7 +104,7 @@ Opciones:
 | `tokens.txt` | un token por línea: token, categoría, lexema, línea y columna |
 | `secuencia_tokens.txt` | lista de tokens en formato compacto, una línea del fuente por línea |
 | `tabla_simbolos.txt` | posición e identificador (cada ID aparece una sola vez) |
-| `errores.txt` | errores léxicos con línea, columna y motivo |
+| `errores.txt` | **tabla de errores** léxicos (N.º, línea, columna, lexema, descripción) y el veredicto final |
 | `resultado.txt` | resumen determinista (tokens + tabla + errores), usado por las pruebas |
 
 ## Pruebas automáticas
@@ -115,13 +115,13 @@ Opciones:
 correr_pruebas.bat                  # Windows (usa PowerShell para comparar)
 ```
 
-Resultado actual: **30 / 30 pruebas correctas**.
+Resultado actual: **31 / 31 pruebas correctas**.
 
 | Carpeta | Qué cubre |
 |---------|-----------|
 | `tests/validas/` (13) | programa de la sección 12, programa completo con todas las categorías, cada grupo de operadores, comparaciones, símbolos, comentarios, ID/TEXTO/reservadas/tabla de símbolos |
-| `tests/invalidas/` (6) | caracteres inválidos (`@ # $ ? ~ ^ \ ' : .`), `&` y `\|` solitarios, textos sin cerrar, errores mezclados con código válido |
-| `tests/limite/` (11) | operadores pegados (`>= == != <=> === !== &&& a+++b`), `=>`, `! =`, comentarios (`//`, `///`, `a//b`, `/ /`, sin salto de línea final, CRLF), archivo vacío, solo espacios, `10.`, `1.2.3` |
+| `tests/invalidas/` (7) | caracteres inválidos (`@ # $ ? ~ ^ \ ' : .`), `&` y `\|` solitarios, textos con comillas sin cerrar, **números mal formados** (`12.3.4`, `1.2.3.4`, `5..3`, `10.`, `.5`), errores mezclados con código válido |
+| `tests/limite/` (11) | operadores pegados (`>= == != <=> === !== &&& a+++b`), `=>`, `! =`, comentarios (`//`, `///`, `a//b`, `/ /`, sin salto de línea final, CRLF), archivo vacío, solo espacios, `10.`, `1.2.3` (números mal formados) |
 
 ## Decisiones de diseño (casos límite documentados)
 
@@ -145,9 +145,18 @@ Resultado actual: **30 / 30 pruebas correctas**.
 * **`//` dentro de un `TEXTO`** no es comentario (`"a // b"` es un solo `TEXTO`); una `"` dentro de un comentario
   tampoco abre un texto. `/ /` son dos `DIV`; `a/b` es `ID DIV ID`.
 * **Números negativos**: `-5` son dos tokens (`-` y `NUM_INT`); la especificación no define signo en el número.
-* **`10.` y `.5`**: el `.` suelto es error léxico (`D+\.D+` exige dígitos a ambos lados).
-* **TEXTO** termina en la primera `"` y no cruza líneas; un texto sin cerrar se reporta **una sola vez**
-  hasta el fin de la línea.
+* **Números mal formados** (`12.3.4`, `1.2.3.4`, `5..3`, `10.`, `.5`, `3.14.`): NO se acepta un prefijo válido
+  (`12.3`) dejando el resto suelto. Se consume todo el bloque de dígitos y puntos y se reporta **un solo error**
+  (`numero decimal invalido`) con su motivo: más de un punto, falta la parte decimal o falta la parte entera.
+  No genera ningún token (`NUM_DEC` exige `D+\.D+` exacto).
+* **Comillas**: `TEXTO` termina en la primera `"` y no cruza líneas; si falta la comilla de cierre se reporta
+  **un solo error** (`texto sin cerrar (falta la comilla de cierre)`) desde la comilla hasta el fin de la línea.
+
+**Reporte de errores y veredicto**
+* Los errores se muestran en una **tabla** (N.º, línea, columna, lexema, descripción), por consola y en `errores.txt`.
+* Al final se imprime el veredicto: `ANALISIS LEXICO CORRECTO` o
+  `ANALISIS LEXICO INCORRECTO: se encontraron N errores lexicos.`
+* Código de salida del programa: `0` = sin errores léxicos, `2` = con errores léxicos, `1` = no se pudo abrir el archivo.
 
 ## Cómo funciona (resumen)
 

@@ -10,3 +10,4 @@
 4 y
 5 z
 --- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

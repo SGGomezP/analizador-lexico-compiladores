@@ -21,7 +21,7 @@ struct ErrorLexico {
 // Analizador léxico para LP.
 //
 // Fase 1: lectura carácter por carácter (con línea/columna) y
-//         NUM_INT = D+ ,  NUM_DEC = D+\.D+
+//         NUM_INT = D+ ,  NUM_DEC = D+\.D+  (12.3.4, 10. y .5 son UN error: numero mal formado)
 // Fase 2: ID = L(L|D)* , TEXTO = ".*" , 13 palabras reservadas y
 //         tabla de símbolos (cada ID se inserta UNA sola vez: <ID, posicion>).
 // Fase 3 (esta entrega): TODOS los tokens de la lista del curso.
@@ -81,6 +81,7 @@ private:
     Token reconocerNumero();
     Token reconocerIdentificador();   // ID o palabra reservada
     Token reconocerTexto();           // TEXTO (o error si no se cierra)
+    static std::string motivoNumeroMalFormado(const std::string& lexema);
 
     // Fase 3
     Token reconocerComentario();      // //.*\n   (asume que ve "//")

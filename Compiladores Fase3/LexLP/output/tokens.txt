@@ -11,7 +11,6 @@
 <FLOAT>	Palabra reservada	lexema=float	linea=3	columna=5
 <ID, 1>	Identificador	lexema=nota	linea=3	columna=11
 <=>	Operador de asignacion	lexema==	linea=3	columna=16
-<NUM_INT>	Numero entero	lexema=15	linea=3	columna=18
 <;>	Simbolo especial	lexema=;	linea=3	columna=21
 <IF>	Palabra reservada	lexema=if	linea=4	columna=5
 <(>	Simbolo especial	lexema=(	linea=4	columna=8

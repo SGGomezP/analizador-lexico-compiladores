@@ -14,7 +14,7 @@ Todos los integrantes deben poder explicar **todo** el flujo y modificar/probar 
 | 6 | Flujo del analizador | `analizar()` → `siguienteToken()` → según el 1.er carácter: número / ID / texto / comentario / operador |
 | 7 | Decisiones de la Fase 3 | Coincidencia más larga, `&` y `\|` solos = error, `COMENT`, `COMP` con atributo |
 | 8 | Demo en vivo | Correr `prueba_programa_completo.lp` y `prueba_errores_mezclados.lp` |
-| 9 | Pruebas | 30 pruebas: 13 válidas, 6 inválidas, 11 límite; correr `correr_pruebas` |
+| 9 | Pruebas | 31 pruebas: 13 válidas, 7 inválidas, 11 límite; correr `correr_pruebas` |
 | 10 | Conclusiones | Qué aprendimos / qué sigue (analizador sintáctico) |
 
 ## 2. Flujo del analizador (para explicar en 1 minuto)
@@ -44,7 +44,10 @@ Todos los integrantes deben poder explicar **todo** el flujo y modificar/probar 
 * **¿`//` dentro de un texto?** Es parte del `TEXTO`: el lexer entra por `"` y no vuelve a mirar `//` hasta cerrarlo.
 * **¿Qué atributo llevan `ID` y `COMP`?** `ID`: posición en la tabla. `COMP`: el operador concreto (`<COMP, >=>`).
 * **¿Y los números negativos?** `-5` es `-` + `NUM_INT`; el signo lo resolvería el analizador sintáctico.
-* **¿Por qué `10.` da error?** `NUM_DEC = D+\.D+` exige dígitos después del punto; el `.` suelto no es token.
+* **¿Qué pasa con `12.3.4`?** Es **un solo error** (número decimal inválido: más de un punto). No se acepta `12.3` y se deja `.4` suelto: se consume todo el bloque de dígitos y puntos y se reporta completo.
+* **¿Y `10.` o `.5`?** También un solo error: `NUM_DEC = D+\.D+` exige dígitos a ambos lados del punto.
+* **¿Qué pasa con las comillas sin cerrar?** Error `texto sin cerrar (falta la comilla de cierre)`, una sola vez, hasta el fin de la línea; el análisis continúa.
+* **¿Cómo informan los errores?** Tabla (N.º, línea, columna, lexema, descripción) y un veredicto final: `ANALISIS LEXICO INCORRECTO: se encontraron N errores lexicos.`
 
 ## 4. Cambios en vivo que suelen pedir (practicar)
 
