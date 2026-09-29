@@ -1,0 +1,12 @@
+--- Tokens (29) ---
+<NUM_INT> <+> <NUM_INT> <NUM_INT> <-> <NUM_INT> <NUM_INT> <*> <NUM_INT> <NUM_INT> </> <NUM_INT> <NUM_INT> <%> <NUM_INT>
+<NUM_DEC> <+> <NUM_DEC>
+<NUM_INT>
+<NUM_DEC> <NUM_INT>
+<ID, 0> <=> <NUM_DEC> <*> <ID, 1> <*> <ID, 1> <;>
+--- Tabla de simbolos (2) ---
+0 x
+1 r
+--- Errores lexicos (2) ---
+Linea 3, Columna 3: caracter no reconocido '.'
+Linea 4, Columna 4: caracter no reconocido '.'

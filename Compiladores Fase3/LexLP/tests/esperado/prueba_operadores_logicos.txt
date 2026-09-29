@@ -1,0 +1,12 @@
+--- Tokens (17) ---
+<&&> <||> <!>
+<ID, 0> <&&> <ID, 1> <||> <!> <ID, 2>
+<!> <(> <ID, 3> <&&> <ID, 4> <)> <||> <ID, 5>
+--- Tabla de simbolos (6) ---
+0 a
+1 b
+2 c
+3 x
+4 y
+5 z
+--- Errores lexicos (0) ---

@@ -1,0 +1,7 @@
+# Binarios generados al compilar
+lexlp
+lexlp.exe
+*.o
+build/
+# Salidas de las pruebas automaticas (se regeneran con correr_pruebas)
+output/pruebas/

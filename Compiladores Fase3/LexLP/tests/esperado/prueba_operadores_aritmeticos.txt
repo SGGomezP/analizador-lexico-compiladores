@@ -1,0 +1,13 @@
+--- Tokens (29) ---
+<+> <-> <*> </> <%>
+<ID, 0> <+> <ID, 1> <-> <ID, 2> <*> <ID, 3> </> <ID, 4> <%> <ID, 5>
+<ID, 6> <=> <NUM_INT> <+> <NUM_INT> <*> <NUM_INT> <-> <NUM_INT> </> <NUM_INT> <%> <NUM_INT>
+--- Tabla de simbolos (7) ---
+0 a
+1 b
+2 c
+3 d
+4 e
+5 f
+6 x
+--- Errores lexicos (0) ---

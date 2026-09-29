@@ -1,0 +1,40 @@
+--- Tokens (147) ---
+<COMENT>
+<INT> <ID, 0> <(> <INT> <ID, 1> <,> <INT> <ID, 2> <)> <{>
+<RETURN> <ID, 1> <+> <ID, 2> <;>
+<}>
+<VOID> <MAIN> <(> <)> <{>
+<INT> <ID, 3> <[> <NUM_INT> <]> <;>
+<INT> <ID, 4> <;>
+<FLOAT> <ID, 5> <=> <NUM_DEC> <;>
+<FLOAT> <ID, 6> <;>
+<CHAR> <ID, 7> <;>
+<BOOLEAN> <ID, 8> <;>
+<FOR> <(> <ID, 4> <=> <NUM_INT> <;> <ID, 4> <COMP, <> <NUM_INT> <;> <ID, 4> <=> <ID, 4> <+> <NUM_INT> <)> <{>
+<SCANF> <(> <ID, 3> <[> <ID, 4> <]> <)> <;>
+<ID, 5> <=> <ID, 5> <+> <ID, 3> <[> <ID, 4> <]> <;>
+<}>
+<ID, 6> <=> <ID, 5> </> <NUM_INT> <;> <COMENT>
+<ID, 8> <=> <ID, 6> <COMP, >=> <NUM_DEC> <&&> <ID, 6> <COMP, !=> <NUM_INT> <||> <!> <ID, 8> <;>
+<WHILE> <(> <ID, 4> <COMP, >> <NUM_INT> <)> <{>
+<ID, 4> <=> <ID, 4> <-> <NUM_INT> <;>
+<}>
+<IF> <(> <ID, 4> <%> <NUM_INT> <COMP, ==> <NUM_INT> <)> <{>
+<PRINTLN> <(> <TEXTO> <)> <;>
+<}> <ELSE> <{>
+<PRINTLN> <(> <TEXTO> <)> <;>
+<}>
+<PRINTLN> <(> <TEXTO> <,> <ID, 6> <)> <;>
+<RETURN> <;>
+<}>
+--- Tabla de simbolos (9) ---
+0 suma
+1 a
+2 b
+3 notas
+4 i
+5 total
+6 promedio
+7 letra
+8 aprobado
+--- Errores lexicos (0) ---

@@ -1,0 +1,8 @@
+--- Tokens (18) ---
+<INT> <ID, 0> <=> <NUM_INT> <;>
+<FLOAT> <ID, 1> <=> <ID, 0> </> <NUM_INT> <;>
+<ID, 0> <=> <ID, 0> <+> <NUM_INT> <;>
+--- Tabla de simbolos (2) ---
+0 edad
+1 promedio
+--- Errores lexicos (0) ---

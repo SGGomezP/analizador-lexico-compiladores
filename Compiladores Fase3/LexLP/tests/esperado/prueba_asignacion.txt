@@ -1,0 +1,10 @@
+--- Tokens (14) ---
+<ID, 0> <=> <NUM_INT> <;>
+<ID, 1> <=> <ID, 0> <=> <NUM_INT> <;>
+<ID, 2> <COMP, ==> <ID, 3> <;>
+--- Tabla de simbolos (4) ---
+0 x
+1 y
+2 a
+3 b
+--- Errores lexicos (0) ---

@@ -1,0 +1,3 @@
+--- Tokens (0) ---
+--- Tabla de simbolos (0) ---
+--- Errores lexicos (0) ---

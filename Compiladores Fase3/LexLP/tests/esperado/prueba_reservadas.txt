@@ -1,0 +1,6 @@
+--- Tokens (13) ---
+<INT> <FLOAT> <CHAR> <BOOLEAN> <VOID>
+<IF> <ELSE> <FOR> <WHILE>
+<SCANF> <PRINTLN> <MAIN> <RETURN>
+--- Tabla de simbolos (0) ---
+--- Errores lexicos (0) ---

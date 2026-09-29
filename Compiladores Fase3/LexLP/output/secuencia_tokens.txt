@@ -1,0 +1,9 @@
+<VOID> <MAIN> <(> <)> <{>
+<INT> <ID, 0> <=> <NUM_INT> <;>
+<FLOAT> <ID, 1> <=> <NUM_INT> <;>
+<IF> <(> <ID, 0> <COMP, >=> <NUM_INT> <ID, 1> <COMP, >> <NUM_INT> <)> <{>
+<PRINTLN> <(>
+<}>
+<COMENT>
+<ID, 2> <=> <ID, 3> <ID, 4> <+> <NUM_INT> <;>
+<}>

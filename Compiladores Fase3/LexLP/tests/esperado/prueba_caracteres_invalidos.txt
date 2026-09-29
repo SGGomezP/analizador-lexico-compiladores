@@ -1,0 +1,29 @@
+--- Tokens (36) ---
+<INT> <ID, 0> <=> <NUM_INT> <NUM_INT> <;>
+<ID, 1> <=> <ID, 0> <NUM_INT> <;>
+<ID, 2> <=> <ID, 3> <NUM_INT> <NUM_INT> <;>
+<ID, 4> <=> <ID, 0> <NUM_INT> <;>
+<ID, 5> <=> <ID, 6> <;>
+<ID, 7> <=> <ID, 0> <NUM_INT> <;>
+<ID, 6> <=> <NUM_INT> <NUM_INT> <;>
+--- Tabla de simbolos (8) ---
+0 x
+1 y
+2 z
+3 valor
+4 w
+5 a
+6 c
+7 b
+--- Errores lexicos (11) ---
+Linea 1, Columna 11: caracter no reconocido '@'
+Linea 2, Columna 7: caracter no reconocido '#'
+Linea 3, Columna 5: caracter no reconocido '$'
+Linea 3, Columna 12: caracter no reconocido '?'
+Linea 3, Columna 16: caracter no reconocido ':'
+Linea 4, Columna 5: caracter no reconocido '~'
+Linea 4, Columna 8: caracter no reconocido '^'
+Linea 5, Columna 5: caracter no reconocido '''
+Linea 5, Columna 7: caracter no reconocido '''
+Linea 6, Columna 7: caracter no reconocido '\'
+Linea 7, Columna 7: caracter no reconocido '.'

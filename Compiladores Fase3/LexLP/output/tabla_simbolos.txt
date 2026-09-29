@@ -1,0 +1,6 @@
+Posicion	Identificador
+0		edad
+1		nota
+2		x
+3		ni
+4		o

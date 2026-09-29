@@ -1,0 +1,17 @@
+--- Tokens (38) ---
+<IF> <(> <ID, 0> <ID, 1> <)> <{> <}>
+<IF> <(> <ID, 0> <ID, 1> <)> <{> <}>
+<IF> <(> <ID, 0> <&&> <ID, 1> <)> <{> <}>
+<IF> <(> <ID, 0> <||> <ID, 1> <)> <{> <}>
+<ID, 2> <=> <ID, 0> <;>
+<ID, 3> <=> <ID, 1> <;>
+--- Tabla de simbolos (4) ---
+0 a
+1 b
+2 x
+3 y
+--- Errores lexicos (4) ---
+Linea 1, Columna 7: operador incompleto (se esperaba '&&') '&'
+Linea 2, Columna 7: operador incompleto (se esperaba '||') '|'
+Linea 5, Columna 7: operador incompleto (se esperaba '&&') '&'
+Linea 6, Columna 5: operador incompleto (se esperaba '||') '|'

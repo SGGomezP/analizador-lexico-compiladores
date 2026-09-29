@@ -1,0 +1,10 @@
+--- Tokens (36) ---
+<COMP, >> <COMP, >=> <COMP, <> <COMP, <=> <COMP, !=> <COMP, ==>
+<ID, 0> <COMP, >> <ID, 1> <ID, 0> <COMP, >=> <ID, 1> <ID, 0> <COMP, <> <ID, 1> <ID, 0> <COMP, <=> <ID, 1> <ID, 0> <COMP, !=> <ID, 1> <ID, 0> <COMP, ==> <ID, 1>
+<IF> <(> <ID, 2> <COMP, ==> <NUM_INT> <&&> <ID, 3> <COMP, !=> <NUM_INT> <)> <{> <}>
+--- Tabla de simbolos (4) ---
+0 a
+1 b
+2 x
+3 y
+--- Errores lexicos (0) ---

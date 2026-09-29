@@ -1,0 +1,23 @@
+--- Tokens (13) ---
+<INT> <ID, 0>
+<ID, 1> <NUM_INT>
+<ID, 2> <TEXTO> <ID, 3>
+<ID, 4> <ID, 5> <ID, 6> <ID, 0>
+<NUM_INT> <ID, 7>
+--- Tabla de simbolos (8) ---
+0 edad
+1 variable
+2 hola
+3 y
+4 nino
+5 ni
+6 o
+7 x
+--- Errores lexicos (7) ---
+Linea 1, Columna 5: caracter no reconocido '@'
+Linea 2, Columna 1: caracter no reconocido '$'
+Linea 3, Columna 1: texto sin cerrar '"texto sin cerrar'
+Linea 4, Columna 13: texto sin cerrar '"abierto'
+Linea 5, Columna 8: caracter no reconocido 'ñ'
+Linea 6, Columna 1: caracter no reconocido '#'
+Linea 7, Columna 1: texto sin cerrar '"ultimo sin cerrar'

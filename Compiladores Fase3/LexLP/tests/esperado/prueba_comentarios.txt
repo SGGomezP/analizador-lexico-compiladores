@@ -1,0 +1,8 @@
+--- Tokens (15) ---
+<COMENT>
+<INT> <ID, 0> <=> <NUM_INT> <;> <COMENT>
+<COMENT>
+<ID, 0> <=> <ID, 0> </> <NUM_INT> <;> <COMENT>
+--- Tabla de simbolos (1) ---
+0 x
+--- Errores lexicos (0) ---

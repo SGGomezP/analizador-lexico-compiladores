@@ -1,0 +1,10 @@
+--- Tokens (14) ---
+<PRINTLN> <(>
+<INT> <ID, 0> <=> <NUM_INT> <;>
+<PRINTLN> <(> <TEXTO> <)> <;>
+<PRINTLN> <(>
+--- Tabla de simbolos (1) ---
+0 x
+--- Errores lexicos (2) ---
+Linea 1, Columna 9: texto sin cerrar '"Hola);'
+Linea 4, Columna 9: texto sin cerrar '"otro sin cerrar'

@@ -1,0 +1,10 @@
+--- Tokens (8) ---
+<TEXTO>
+<TEXTO>
+<TEXTO>
+<TEXTO>
+<TEXTO> <ID, 0> <TEXTO>
+<TEXTO>
+--- Tabla de simbolos (1) ---
+0 edad
+--- Errores lexicos (0) ---

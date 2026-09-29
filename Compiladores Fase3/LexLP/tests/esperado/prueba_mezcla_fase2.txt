@@ -1,0 +1,8 @@
+--- Tokens (8) ---
+<ID, 0> <=> <NUM_INT> <ID, 1> <+> <NUM_DEC> <ID, 2> <NUM_INT>
+--- Tabla de simbolos (3) ---
+0 x
+1 abc
+2 y
+--- Errores lexicos (1) ---
+Linea 1, Columna 19: caracter no reconocido '.'

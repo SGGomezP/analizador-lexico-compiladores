@@ -1,0 +1,15 @@
+--- Tokens (13) ---
+<ID, 0> <ID, 1> <ID, 2> <ID, 3> <ID, 4> <ID, 5> <ID, 6> <ID, 7> <ID, 8> <ID, 9>
+<MAIN> <INT> <MAIN>
+--- Tabla de simbolos (10) ---
+0 Int
+1 INT
+2 Float
+3 RETURN
+4 integer
+5 mainx
+6 printlnn
+7 ifelse
+8 int2
+9 _int
+--- Errores lexicos (0) ---

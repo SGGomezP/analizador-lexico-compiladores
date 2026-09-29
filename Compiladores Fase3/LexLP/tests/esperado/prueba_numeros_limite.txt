@@ -1,0 +1,11 @@
+--- Tokens (9) ---
+<NUM_INT>
+<NUM_DEC>
+<NUM_DEC>
+<NUM_INT>
+<NUM_INT> <NUM_DEC> <NUM_INT>
+<NUM_DEC> <NUM_INT>
+--- Tabla de simbolos (0) ---
+--- Errores lexicos (2) ---
+Linea 4, Columna 3: caracter no reconocido '.'
+Linea 6, Columna 5: caracter no reconocido '.'

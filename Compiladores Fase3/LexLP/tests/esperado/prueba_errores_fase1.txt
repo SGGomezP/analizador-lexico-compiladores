@@ -1,0 +1,9 @@
+--- Tokens (5) ---
+<NUM_INT> <NUM_INT>
+<NUM_INT>
+<NUM_DEC> <NUM_INT>
+--- Tabla de simbolos (0) ---
+--- Errores lexicos (3) ---
+Linea 1, Columna 4: caracter no reconocido '@'
+Linea 2, Columna 1: caracter no reconocido '#'
+Linea 3, Columna 6: operador incompleto (se esperaba '&&') '&'

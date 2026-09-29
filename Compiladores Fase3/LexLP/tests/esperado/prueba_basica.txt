@@ -1,0 +1,8 @@
+--- Tokens (5) ---
+<NUM_INT>
+<NUM_DEC>
+<NUM_INT>
+<NUM_DEC>
+<NUM_INT>
+--- Tabla de simbolos (0) ---
+--- Errores lexicos (0) ---
