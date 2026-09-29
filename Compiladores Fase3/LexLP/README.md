@@ -15,9 +15,10 @@ para el lenguaje simplificado **LP**, desarrollado en 3 fases semanales.
 
 | Nombre | Aporte |
 |--------|--------|
-| _(completar)_ | _(p. ej. Fase 1: lectura y números)_ |
-| _(completar)_ | _(p. ej. Fase 2: ID, TEXTO y tabla de símbolos)_ |
-| _(completar)_ | _(p. ej. Fase 3: operadores, pruebas y documentación)_ |
+| Rafael | **Fase 1**: lectura del archivo carácter por carácter (línea/columna), reconocimiento de `NUM_INT` y `NUM_DEC`, y estructura base de `Token` y `TokenType`. |
+| Sebastián | **Fase 2**: reconocimiento de `ID` y `TEXTO`, las 13 palabras reservadas y la tabla de símbolos (`SymbolTable`) sin identificadores duplicados. |
+| Albana | **Fase 3**: operadores aritméticos, lógicos, de asignación y de comparación (`COMP` con atributo), símbolos especiales y comentarios (`COMENT`); regla de coincidencia más larga. |
+| Daniel | **Fase 3**: integración en `main.cpp`, tabla de errores y veredicto final, validación de números mal formados y comillas sin cerrar, casos de prueba (`tests/`), script de pruebas automáticas y documentación. |
 
 ## Tokens reconocidos (lista completa del curso)
 
