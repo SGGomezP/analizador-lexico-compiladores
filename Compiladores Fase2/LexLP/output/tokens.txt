@@ -1,0 +1,11 @@
+<INT>	lexema=int	linea=1	columna=1
+<ID, 0>	lexema=edad	linea=1	columna=5
+<NUM_INT>	lexema=20	linea=1	columna=10
+<NUM_DEC>	lexema=15.5	linea=1	columna=13
+<FLOAT>	lexema=float	linea=2	columna=1
+<ID, 1>	lexema=promedio	linea=2	columna=7
+<ID, 0>	lexema=edad	linea=2	columna=16
+<TEXTO>	lexema="Hola mundo"	linea=3	columna=1
+<ID, 2>	lexema=nota1	linea=3	columna=14
+<PRINTLN>	lexema=println	linea=3	columna=20
+<NUM_INT>	lexema=7	linea=3	columna=28
