@@ -1,0 +1,88 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (83 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: a  <ID, 0>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 1
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: b  <ID, 1>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 2
+        |-- Declaracion
+        |   |-- Tipo: boolean
+        |   `-- Variable
+        |       `-- ID: r  <ID, 2>
+        |-- Asignacion
+        |   |-- ID: a  <ID, 0>
+        |   `-- Op: -
+        |       |-- Op: +
+        |       |   |-- ID: a  <ID, 0>
+        |       |   `-- Op: *
+        |       |       |-- ID: b  <ID, 1>
+        |       |       `-- NUM_INT: 3
+        |       `-- Op: %
+        |           |-- Op: /
+        |           |   |-- NUM_INT: 4
+        |           |   `-- NUM_INT: 2
+        |           `-- NUM_INT: 5
+        |-- Asignacion
+        |   |-- ID: a  <ID, 0>
+        |   `-- Op: *
+        |       |-- Op: +
+        |       |   |-- ID: a  <ID, 0>
+        |       |   `-- ID: b  <ID, 1>
+        |       `-- Op: -
+        |           |-- ID: a  <ID, 0>
+        |           `-- ID: b  <ID, 1>
+        |-- Asignacion
+        |   |-- ID: r  <ID, 2>
+        |   `-- Op: ||
+        |       |-- Op: &&
+        |       |   |-- Op: >
+        |       |   |   |-- ID: a  <ID, 0>
+        |       |   |   `-- ID: b  <ID, 1>
+        |       |   `-- Op: <=
+        |       |       |-- ID: b  <ID, 1>
+        |       |       `-- NUM_INT: 10
+        |       `-- OpUnario: !
+        |           `-- ID: r  <ID, 2>
+        |-- Asignacion
+        |   |-- ID: r  <ID, 2>
+        |   `-- Op: ==
+        |       |-- ID: a  <ID, 0>
+        |       `-- ID: b  <ID, 1>
+        |-- Asignacion
+        |   |-- ID: r  <ID, 2>
+        |   `-- Op: &&
+        |       |-- Op: !=
+        |       |   |-- ID: a  <ID, 0>
+        |       |   `-- ID: b  <ID, 1>
+        |       `-- OpUnario: !
+        |           `-- Op: <
+        |               |-- ID: a  <ID, 0>
+        |               `-- ID: b  <ID, 1>
+        |-- Asignacion
+        |   |-- ID: a  <ID, 0>
+        |   `-- OpUnario: -
+        |       `-- OpUnario: -
+        |           `-- ID: a  <ID, 0>
+        `-- Asignacion
+            |-- ID: a  <ID, 0>
+            `-- Op: +
+                |-- Op: %
+                |   |-- NUM_INT: 10
+                |   `-- NUM_INT: 3
+                `-- NUM_DEC: 2.5
+--- Errores sintacticos (0) ---
+--- Avisos (0) ---
+ANALISIS SINTACTICO CORRECTO: el programa cumple la gramatica de LP.

@@ -1,0 +1,19 @@
+--- Errores lexicos previos: 2 ---
+--- Arbol sintactico (12 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        `-- Declaracion
+            |-- Tipo: int
+            `-- Variable
+                |-- ID: x  <ID, 0>
+                `-- Inicializacion
+                    `-- NUM_INT: 5
+--- Errores sintacticos (2) ---
+Linea 3, Columna 13: Se esperaba una expresion (numero, texto, identificador, '(' , '-' o '!'), pero se encontro ';'
+Linea 4, Columna 10: Se esperaba ';' al final de la asignacion (se encontro el numero '2')
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 2 errores sintacticos.

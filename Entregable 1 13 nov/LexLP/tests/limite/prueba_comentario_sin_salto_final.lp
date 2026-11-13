@@ -1,0 +1,1 @@
+x = 1; // comentario final SIN salto de linea

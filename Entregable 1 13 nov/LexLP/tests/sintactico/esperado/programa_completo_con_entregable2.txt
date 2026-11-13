@@ -1,0 +1,79 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (70 nodos) ---
+Programa
+|-- Funcion
+|   |-- Tipo: int
+|   |-- ID: suma  <ID, 0>
+|   |-- Parametros
+|   |   |-- Parametro
+|   |   |   |-- Tipo: int
+|   |   |   `-- ID: a  <ID, 1>
+|   |   `-- Parametro
+|   |       |-- Tipo: int
+|   |       `-- ID: b  <ID, 2>
+|   `-- Bloque
+|       `-- Return
+|           `-- Op: +
+|               |-- ID: a  <ID, 1>
+|               `-- ID: b  <ID, 2>
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: notas  <ID, 3>
+        |       `-- Tamano: 5
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       `-- ID: i  <ID, 4>
+        |-- Declaracion
+        |   |-- Tipo: float
+        |   `-- Variable
+        |       |-- ID: total  <ID, 5>
+        |       `-- Inicializacion
+        |           `-- NUM_DEC: 0.0
+        |-- Declaracion
+        |   |-- Tipo: float
+        |   `-- Variable
+        |       `-- ID: promedio  <ID, 6>
+        |-- Declaracion
+        |   |-- Tipo: char
+        |   `-- Variable
+        |       `-- ID: letra  <ID, 7>
+        |-- Declaracion
+        |   |-- Tipo: boolean
+        |   `-- Variable
+        |       `-- ID: aprobado  <ID, 8>
+        |-- Pendiente: for (Entregable 2)
+        |-- Asignacion
+        |   |-- ID: promedio  <ID, 6>
+        |   `-- Op: /
+        |       |-- ID: total  <ID, 5>
+        |       `-- NUM_INT: 5
+        |-- Asignacion
+        |   |-- ID: aprobado  <ID, 8>
+        |   `-- Op: ||
+        |       |-- Op: &&
+        |       |   |-- Op: >=
+        |       |   |   |-- ID: promedio  <ID, 6>
+        |       |   |   `-- NUM_DEC: 10.5
+        |       |   `-- Op: !=
+        |       |       |-- ID: promedio  <ID, 6>
+        |       |       `-- NUM_INT: 0
+        |       `-- OpUnario: !
+        |           `-- ID: aprobado  <ID, 8>
+        |-- Pendiente: while (Entregable 2)
+        |-- Pendiente: if (Entregable 2)
+        |-- Pendiente: println (Entregable 2)
+        `-- Return
+--- Errores sintacticos (0) ---
+--- Avisos (4) ---
+Linea 14, Columna 5: La sentencia 'for' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+Linea 22, Columna 5: La sentencia 'while' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+Linea 26, Columna 5: La sentencia 'if' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+Linea 32, Columna 5: La sentencia 'println' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+ANALISIS SINTACTICO CORRECTO: el programa cumple la gramatica de LP.

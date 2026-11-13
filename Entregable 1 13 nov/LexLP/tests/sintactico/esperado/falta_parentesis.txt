@@ -1,0 +1,13 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (6 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+--- Errores sintacticos (2) ---
+Linea 2, Columna 19: Se esperaba ')' para cerrar el parentesis de la expresion, pero se encontro ';'
+Linea 3, Columna 18: Se esperaba ';' al final de la declaracion (se encontro ')')
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 2 errores sintacticos.

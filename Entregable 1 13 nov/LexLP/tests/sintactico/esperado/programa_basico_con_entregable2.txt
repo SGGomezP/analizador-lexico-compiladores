@@ -1,0 +1,28 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (21 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: edad  <ID, 0>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 20
+        |-- Declaracion
+        |   |-- Tipo: float
+        |   `-- Variable
+        |       |-- ID: promedio  <ID, 1>
+        |       `-- Inicializacion
+        |           `-- NUM_DEC: 15.5
+        |-- Pendiente: println (Entregable 2)
+        |-- Pendiente: if (Entregable 2)
+        `-- Return
+--- Errores sintacticos (0) ---
+--- Avisos (2) ---
+Linea 4, Columna 5: La sentencia 'println' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+Linea 5, Columna 5: La sentencia 'if' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+ANALISIS SINTACTICO CORRECTO: el programa cumple la gramatica de LP.

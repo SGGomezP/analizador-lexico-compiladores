@@ -1,0 +1,75 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (70 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       `-- ID: edad  <ID, 0>
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: anio  <ID, 1>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 2026
+        |-- Declaracion
+        |   |-- Tipo: float
+        |   `-- Variable
+        |       |-- ID: promedio  <ID, 2>
+        |       `-- Inicializacion
+        |           `-- NUM_DEC: 15.5
+        |-- Declaracion
+        |   |-- Tipo: char
+        |   `-- Variable
+        |       `-- ID: letra  <ID, 3>
+        |-- Declaracion
+        |   |-- Tipo: boolean
+        |   `-- Variable
+        |       `-- ID: aprobado  <ID, 4>
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   |-- Variable
+        |   |   `-- ID: a  <ID, 5>
+        |   |-- Variable
+        |   |   `-- ID: b  <ID, 6>
+        |   `-- Variable
+        |       `-- ID: c  <ID, 7>
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   |-- Variable
+        |   |   |-- ID: x  <ID, 8>
+        |   |   `-- Inicializacion
+        |   |       `-- NUM_INT: 1
+        |   |-- Variable
+        |   |   |-- ID: y  <ID, 9>
+        |   |   `-- Inicializacion
+        |   |       `-- NUM_INT: 2
+        |   `-- Variable
+        |       `-- ID: z  <ID, 10>
+        |-- Declaracion
+        |   |-- Tipo: float
+        |   `-- Variable
+        |       |-- ID: notas  <ID, 11>
+        |       `-- Tamano: 5
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   |-- Variable
+        |   |   |-- ID: tabla  <ID, 12>
+        |   |   `-- Tamano: 10
+        |   `-- Variable
+        |       |-- ID: total  <ID, 13>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 0
+        `-- Declaracion
+            |-- Tipo: char
+            `-- Variable
+                |-- ID: nombre  <ID, 14>
+                `-- Inicializacion
+                    `-- TEXTO: "Ana"
+--- Errores sintacticos (0) ---
+--- Avisos (0) ---
+ANALISIS SINTACTICO CORRECTO: el programa cumple la gramatica de LP.

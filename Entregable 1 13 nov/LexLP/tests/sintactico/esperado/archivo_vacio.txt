@@ -1,0 +1,7 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (1 nodos) ---
+Programa
+--- Errores sintacticos (1) ---
+Linea 1, Columna 1: El programa esta vacio: se esperaba al menos la funcion 'main'
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 1 error sintactico.

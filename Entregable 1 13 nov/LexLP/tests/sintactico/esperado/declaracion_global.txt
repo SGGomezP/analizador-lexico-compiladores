@@ -1,0 +1,12 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (6 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+--- Errores sintacticos (1) ---
+Linea 1, Columna 7: Se esperaba '(' despues del nombre de la funcion, pero se encontro '=' (en LP las variables se declaran dentro de una funcion, no fuera)
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 1 error sintactico.

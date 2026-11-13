@@ -1,0 +1,7 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (1 nodos) ---
+Programa
+--- Errores sintacticos (1) ---
+Linea 1, Columna 1: Se esperaba el tipo de retorno de una funcion (int, float, char, boolean o void), pero se encontro la palabra reservada 'main' (en LP el programa es una secuencia de funciones)
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 1 error sintactico.

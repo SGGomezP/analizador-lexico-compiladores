@@ -1,0 +1,83 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (78 nodos) ---
+Programa
+|-- Funcion
+|   |-- Tipo: int
+|   |-- ID: suma  <ID, 0>
+|   |-- Parametros
+|   |   |-- Parametro
+|   |   |   |-- Tipo: int
+|   |   |   `-- ID: a  <ID, 1>
+|   |   `-- Parametro
+|   |       |-- Tipo: int
+|   |       `-- ID: b  <ID, 2>
+|   `-- Bloque
+|       `-- Return
+|           `-- Op: +
+|               |-- ID: a  <ID, 1>
+|               `-- ID: b  <ID, 2>
+|-- Funcion
+|   |-- Tipo: float
+|   |-- ID: promedio  <ID, 3>
+|   |-- Parametros
+|   |   |-- Parametro
+|   |   |   |-- Tipo: float
+|   |   |   |-- ID: notas  <ID, 4>
+|   |   |   `-- Arreglo
+|   |   `-- Parametro
+|   |       |-- Tipo: int
+|   |       `-- ID: n  <ID, 5>
+|   `-- Bloque
+|       |-- Declaracion
+|       |   |-- Tipo: float
+|       |   `-- Variable
+|       |       |-- ID: total  <ID, 6>
+|       |       `-- Inicializacion
+|       |           `-- NUM_DEC: 0.0
+|       `-- Return
+|           `-- Op: /
+|               |-- ID: total  <ID, 6>
+|               `-- ID: n  <ID, 5>
+|-- Funcion
+|   |-- Tipo: void
+|   |-- ID: saludar  <ID, 7>
+|   |-- Parametros
+|   `-- Bloque
+|       `-- Return
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       `-- ID: r  <ID, 8>
+        |-- Asignacion
+        |   |-- ID: r  <ID, 8>
+        |   `-- Llamada
+        |       |-- ID: suma  <ID, 0>
+        |       `-- Argumentos
+        |           |-- NUM_INT: 2
+        |           `-- NUM_INT: 3
+        |-- Asignacion
+        |   |-- ID: r  <ID, 8>
+        |   `-- Op: *
+        |       |-- Llamada
+        |       |   |-- ID: suma  <ID, 0>
+        |       |   `-- Argumentos
+        |       |       |-- Llamada
+        |       |       |   |-- ID: suma  <ID, 0>
+        |       |       |   `-- Argumentos
+        |       |       |       |-- NUM_INT: 1
+        |       |       |       `-- NUM_INT: 2
+        |       |       `-- NUM_INT: 4
+        |       `-- NUM_INT: 2
+        |-- LlamadaSentencia
+        |   `-- Llamada
+        |       |-- ID: saludar  <ID, 7>
+        |       `-- Argumentos
+        `-- Return
+--- Errores sintacticos (0) ---
+--- Avisos (0) ---
+ANALISIS SINTACTICO CORRECTO: el programa cumple la gramatica de LP.

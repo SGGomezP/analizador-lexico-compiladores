@@ -1,0 +1,15 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (6 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+--- Errores sintacticos (4) ---
+Linea 2, Columna 14: Se esperaba ';' al final de la declaracion (se encontro el numero '6')
+Linea 3, Columna 5: Se esperaba una sentencia (declaracion, asignacion o return), pero se encontro el texto "hola"
+Linea 4, Columna 10: Se esperaba ';' al final de la asignacion (se encontro el numero '4')
+Linea 5, Columna 13: Se esperaba ';' despues de 'return' (se encontro el identificador 'y')
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 4 errores sintacticos.

@@ -1,0 +1,32 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (27 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: x  <ID, 0>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 1
+        |-- Bloque
+        |   |-- Declaracion
+        |   |   |-- Tipo: int
+        |   |   `-- Variable
+        |   |       |-- ID: y  <ID, 1>
+        |   |       `-- Inicializacion
+        |   |           `-- NUM_INT: 2
+        |   `-- Bloque
+        |       `-- Asignacion
+        |           |-- ID: x  <ID, 0>
+        |           `-- Op: +
+        |               |-- ID: x  <ID, 0>
+        |               `-- ID: y  <ID, 1>
+        `-- Return
+            `-- ID: x  <ID, 0>
+--- Errores sintacticos (0) ---
+--- Avisos (0) ---
+ANALISIS SINTACTICO CORRECTO: el programa cumple la gramatica de LP.

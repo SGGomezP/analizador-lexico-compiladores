@@ -1,0 +1,6 @@
+"Hola mundo"
+"Mayor de edad"
+""
+"a+b=c; (x) {y} // no es comentario"
+"Edad valida" edad "Hola mundo"
+"con numeros 123 y 4.5"

@@ -1,0 +1,18 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (10 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        `-- Declaracion
+            |-- Tipo: int
+            `-- Variable
+                `-- ID: x  <ID, 0>
+--- Errores sintacticos (3) ---
+Linea 3, Columna 9: Se esperaba una expresion (numero, texto, identificador, '(' , '-' o '!'), pero se encontro ';'
+Linea 4, Columna 13: Se esperaba una expresion (numero, texto, identificador, '(' , '-' o '!'), pero se encontro ';'
+Linea 5, Columna 9: Se esperaba una expresion (numero, texto, identificador, '(' , '-' o '!'), pero se encontro '*'
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 3 errores sintacticos.

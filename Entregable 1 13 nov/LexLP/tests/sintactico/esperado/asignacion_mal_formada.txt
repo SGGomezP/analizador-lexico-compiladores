@@ -1,0 +1,19 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (10 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        `-- Declaracion
+            |-- Tipo: int
+            `-- Variable
+                `-- ID: x  <ID, 0>
+--- Errores sintacticos (4) ---
+Linea 3, Columna 7: Se esperaba '=' en la asignacion a 'x', pero se encontro '==' (para asignar se usa '=', '==' es una comparacion)
+Linea 4, Columna 7: Se esperaba '=' en la asignacion a 'x', pero se encontro el numero '5'
+Linea 5, Columna 5: Se esperaba una sentencia (declaracion, asignacion o return), pero se encontro el numero '5'
+Linea 6, Columna 7: Se esperaba '=' en la asignacion a 'x', pero se encontro '+'
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 4 errores sintacticos.

@@ -1,0 +1,16 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (6 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+--- Errores sintacticos (5) ---
+Linea 2, Columna 11: El tamano de un arreglo debe ser una constante entera (ej: int a[5]), pero se encontro ']'
+Linea 3, Columna 11: El tamano de un arreglo debe ser una constante entera (ej: int a[5]), pero se encontro el identificador 'x'
+Linea 4, Columna 11: El tamano de un arreglo debe ser una constante entera (ej: int a[5]), pero se encontro el numero '3.5'
+Linea 5, Columna 14: No se permite inicializar un arreglo en su declaracion (asigne cada elemento por separado)
+Linea 6, Columna 12: Se esperaba ']' para cerrar el tamano del arreglo, pero se encontro ';'
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 5 errores sintacticos.

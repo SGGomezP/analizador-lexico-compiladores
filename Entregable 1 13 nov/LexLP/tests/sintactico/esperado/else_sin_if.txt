@@ -1,0 +1,22 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (16 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: x  <ID, 0>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 1
+        `-- Bloque
+            `-- Asignacion
+                |-- ID: x  <ID, 0>
+                `-- NUM_INT: 2
+--- Errores sintacticos (1) ---
+Linea 3, Columna 5: 'else' sin un 'if' previo
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 1 error sintactico.

@@ -1,0 +1,147 @@
+<COMENT>	Comentario	lexema=// Programa de prueba con todas las categorias de tokens	linea=1	columna=1
+<INT>	Palabra reservada	lexema=int	linea=2	columna=1
+<ID, 0>	Identificador	lexema=suma	linea=2	columna=5
+<(>	Simbolo especial	lexema=(	linea=2	columna=9
+<INT>	Palabra reservada	lexema=int	linea=2	columna=10
+<ID, 1>	Identificador	lexema=a	linea=2	columna=14
+<,>	Simbolo especial	lexema=,	linea=2	columna=15
+<INT>	Palabra reservada	lexema=int	linea=2	columna=17
+<ID, 2>	Identificador	lexema=b	linea=2	columna=21
+<)>	Simbolo especial	lexema=)	linea=2	columna=22
+<{>	Simbolo especial	lexema={	linea=2	columna=24
+<RETURN>	Palabra reservada	lexema=return	linea=3	columna=5
+<ID, 1>	Identificador	lexema=a	linea=3	columna=12
+<+>	Operador aritmetico	lexema=+	linea=3	columna=14
+<ID, 2>	Identificador	lexema=b	linea=3	columna=16
+<;>	Simbolo especial	lexema=;	linea=3	columna=17
+<}>	Simbolo especial	lexema=}	linea=4	columna=1
+<VOID>	Palabra reservada	lexema=void	linea=6	columna=1
+<MAIN>	Palabra reservada	lexema=main	linea=6	columna=6
+<(>	Simbolo especial	lexema=(	linea=6	columna=10
+<)>	Simbolo especial	lexema=)	linea=6	columna=11
+<{>	Simbolo especial	lexema={	linea=6	columna=13
+<INT>	Palabra reservada	lexema=int	linea=7	columna=5
+<ID, 3>	Identificador	lexema=notas	linea=7	columna=9
+<[>	Simbolo especial	lexema=[	linea=7	columna=14
+<NUM_INT>	Numero entero	lexema=5	linea=7	columna=15
+<]>	Simbolo especial	lexema=]	linea=7	columna=16
+<;>	Simbolo especial	lexema=;	linea=7	columna=17
+<INT>	Palabra reservada	lexema=int	linea=8	columna=5
+<ID, 4>	Identificador	lexema=i	linea=8	columna=9
+<;>	Simbolo especial	lexema=;	linea=8	columna=10
+<FLOAT>	Palabra reservada	lexema=float	linea=9	columna=5
+<ID, 5>	Identificador	lexema=total	linea=9	columna=11
+<=>	Operador de asignacion	lexema==	linea=9	columna=17
+<NUM_DEC>	Numero decimal	lexema=0.0	linea=9	columna=19
+<;>	Simbolo especial	lexema=;	linea=9	columna=22
+<FLOAT>	Palabra reservada	lexema=float	linea=10	columna=5
+<ID, 6>	Identificador	lexema=promedio	linea=10	columna=11
+<;>	Simbolo especial	lexema=;	linea=10	columna=19
+<CHAR>	Palabra reservada	lexema=char	linea=11	columna=5
+<ID, 7>	Identificador	lexema=letra	linea=11	columna=10
+<;>	Simbolo especial	lexema=;	linea=11	columna=15
+<BOOLEAN>	Palabra reservada	lexema=boolean	linea=12	columna=5
+<ID, 8>	Identificador	lexema=aprobado	linea=12	columna=13
+<;>	Simbolo especial	lexema=;	linea=12	columna=21
+<FOR>	Palabra reservada	lexema=for	linea=14	columna=5
+<(>	Simbolo especial	lexema=(	linea=14	columna=9
+<ID, 4>	Identificador	lexema=i	linea=14	columna=10
+<=>	Operador de asignacion	lexema==	linea=14	columna=12
+<NUM_INT>	Numero entero	lexema=0	linea=14	columna=14
+<;>	Simbolo especial	lexema=;	linea=14	columna=15
+<ID, 4>	Identificador	lexema=i	linea=14	columna=17
+<COMP, <>	Operador de comparacion/relacional	lexema=<	linea=14	columna=19
+<NUM_INT>	Numero entero	lexema=5	linea=14	columna=21
+<;>	Simbolo especial	lexema=;	linea=14	columna=22
+<ID, 4>	Identificador	lexema=i	linea=14	columna=24
+<=>	Operador de asignacion	lexema==	linea=14	columna=26
+<ID, 4>	Identificador	lexema=i	linea=14	columna=28
+<+>	Operador aritmetico	lexema=+	linea=14	columna=30
+<NUM_INT>	Numero entero	lexema=1	linea=14	columna=32
+<)>	Simbolo especial	lexema=)	linea=14	columna=33
+<{>	Simbolo especial	lexema={	linea=14	columna=35
+<SCANF>	Palabra reservada	lexema=scanf	linea=15	columna=9
+<(>	Simbolo especial	lexema=(	linea=15	columna=14
+<ID, 3>	Identificador	lexema=notas	linea=15	columna=15
+<[>	Simbolo especial	lexema=[	linea=15	columna=20
+<ID, 4>	Identificador	lexema=i	linea=15	columna=21
+<]>	Simbolo especial	lexema=]	linea=15	columna=22
+<)>	Simbolo especial	lexema=)	linea=15	columna=23
+<;>	Simbolo especial	lexema=;	linea=15	columna=24
+<ID, 5>	Identificador	lexema=total	linea=16	columna=9
+<=>	Operador de asignacion	lexema==	linea=16	columna=15
+<ID, 5>	Identificador	lexema=total	linea=16	columna=17
+<+>	Operador aritmetico	lexema=+	linea=16	columna=23
+<ID, 3>	Identificador	lexema=notas	linea=16	columna=25
+<[>	Simbolo especial	lexema=[	linea=16	columna=30
+<ID, 4>	Identificador	lexema=i	linea=16	columna=31
+<]>	Simbolo especial	lexema=]	linea=16	columna=32
+<;>	Simbolo especial	lexema=;	linea=16	columna=33
+<}>	Simbolo especial	lexema=}	linea=17	columna=5
+<ID, 6>	Identificador	lexema=promedio	linea=19	columna=5
+<=>	Operador de asignacion	lexema==	linea=19	columna=14
+<ID, 5>	Identificador	lexema=total	linea=19	columna=16
+</>	Operador aritmetico	lexema=/	linea=19	columna=22
+<NUM_INT>	Numero entero	lexema=5	linea=19	columna=24
+<;>	Simbolo especial	lexema=;	linea=19	columna=25
+<COMENT>	Comentario	lexema=// promedio simple	linea=19	columna=29
+<ID, 8>	Identificador	lexema=aprobado	linea=20	columna=5
+<=>	Operador de asignacion	lexema==	linea=20	columna=14
+<ID, 6>	Identificador	lexema=promedio	linea=20	columna=16
+<COMP, >=>	Operador de comparacion/relacional	lexema=>=	linea=20	columna=25
+<NUM_DEC>	Numero decimal	lexema=10.5	linea=20	columna=28
+<&&>	Operador logico	lexema=&&	linea=20	columna=33
+<ID, 6>	Identificador	lexema=promedio	linea=20	columna=36
+<COMP, !=>	Operador de comparacion/relacional	lexema=!=	linea=20	columna=45
+<NUM_INT>	Numero entero	lexema=0	linea=20	columna=48
+<||>	Operador logico	lexema=||	linea=20	columna=50
+<!>	Operador logico	lexema=!	linea=20	columna=53
+<ID, 8>	Identificador	lexema=aprobado	linea=20	columna=54
+<;>	Simbolo especial	lexema=;	linea=20	columna=62
+<WHILE>	Palabra reservada	lexema=while	linea=22	columna=5
+<(>	Simbolo especial	lexema=(	linea=22	columna=11
+<ID, 4>	Identificador	lexema=i	linea=22	columna=12
+<COMP, >>	Operador de comparacion/relacional	lexema=>	linea=22	columna=14
+<NUM_INT>	Numero entero	lexema=0	linea=22	columna=16
+<)>	Simbolo especial	lexema=)	linea=22	columna=17
+<{>	Simbolo especial	lexema={	linea=22	columna=19
+<ID, 4>	Identificador	lexema=i	linea=23	columna=9
+<=>	Operador de asignacion	lexema==	linea=23	columna=11
+<ID, 4>	Identificador	lexema=i	linea=23	columna=13
+<->	Operador aritmetico	lexema=-	linea=23	columna=15
+<NUM_INT>	Numero entero	lexema=1	linea=23	columna=17
+<;>	Simbolo especial	lexema=;	linea=23	columna=18
+<}>	Simbolo especial	lexema=}	linea=24	columna=5
+<IF>	Palabra reservada	lexema=if	linea=26	columna=5
+<(>	Simbolo especial	lexema=(	linea=26	columna=8
+<ID, 4>	Identificador	lexema=i	linea=26	columna=9
+<%>	Operador aritmetico	lexema=%	linea=26	columna=11
+<NUM_INT>	Numero entero	lexema=2	linea=26	columna=13
+<COMP, ==>	Operador de comparacion/relacional	lexema===	linea=26	columna=15
+<NUM_INT>	Numero entero	lexema=0	linea=26	columna=18
+<)>	Simbolo especial	lexema=)	linea=26	columna=19
+<{>	Simbolo especial	lexema={	linea=26	columna=21
+<PRINTLN>	Palabra reservada	lexema=println	linea=27	columna=9
+<(>	Simbolo especial	lexema=(	linea=27	columna=16
+<TEXTO>	Constante de texto	lexema="par"	linea=27	columna=17
+<)>	Simbolo especial	lexema=)	linea=27	columna=22
+<;>	Simbolo especial	lexema=;	linea=27	columna=23
+<}>	Simbolo especial	lexema=}	linea=28	columna=5
+<ELSE>	Palabra reservada	lexema=else	linea=28	columna=7
+<{>	Simbolo especial	lexema={	linea=28	columna=12
+<PRINTLN>	Palabra reservada	lexema=println	linea=29	columna=9
+<(>	Simbolo especial	lexema=(	linea=29	columna=16
+<TEXTO>	Constante de texto	lexema="impar"	linea=29	columna=17
+<)>	Simbolo especial	lexema=)	linea=29	columna=24
+<;>	Simbolo especial	lexema=;	linea=29	columna=25
+<}>	Simbolo especial	lexema=}	linea=30	columna=5
+<PRINTLN>	Palabra reservada	lexema=println	linea=32	columna=5
+<(>	Simbolo especial	lexema=(	linea=32	columna=12
+<TEXTO>	Constante de texto	lexema="Promedio:"	linea=32	columna=13
+<,>	Simbolo especial	lexema=,	linea=32	columna=24
+<ID, 6>	Identificador	lexema=promedio	linea=32	columna=26
+<)>	Simbolo especial	lexema=)	linea=32	columna=34
+<;>	Simbolo especial	lexema=;	linea=32	columna=35
+<RETURN>	Palabra reservada	lexema=return	linea=33	columna=5
+<;>	Simbolo especial	lexema=;	linea=33	columna=11
+<}>	Simbolo especial	lexema=}	linea=34	columna=1

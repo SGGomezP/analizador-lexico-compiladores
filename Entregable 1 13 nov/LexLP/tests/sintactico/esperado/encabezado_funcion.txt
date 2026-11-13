@@ -1,0 +1,9 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (1 nodos) ---
+Programa
+--- Errores sintacticos (3) ---
+Linea 1, Columna 6: Se esperaba el nombre de la funcion despues del tipo de retorno, pero se encontro '('
+Linea 4, Columna 12: Se esperaba el tipo de un parametro (int, float, char o boolean), pero se encontro '{'
+Linea 7, Columna 10: Se esperaba el nombre del parametro despues del tipo 'int', pero se encontro ','
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 3 errores sintacticos.

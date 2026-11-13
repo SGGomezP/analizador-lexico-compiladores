@@ -1,0 +1,23 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (17 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: x  <ID, 0>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 5
+        `-- Asignacion
+            |-- ID: x  <ID, 0>
+            `-- Op: +
+                |-- ID: x  <ID, 0>
+                `-- NUM_INT: 1
+--- Errores sintacticos (1) ---
+Linea 3, Columna 15: Falta '}' para cerrar el bloque abierto en la linea 1, columna 13
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 1 error sintactico.

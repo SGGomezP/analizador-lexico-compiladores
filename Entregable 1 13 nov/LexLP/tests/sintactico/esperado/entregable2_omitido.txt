@@ -1,0 +1,32 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (23 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       `-- ID: i  <ID, 0>
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: n  <ID, 1>
+        |       `-- Inicializacion
+        |           `-- NUM_INT: 3
+        |-- Pendiente: scanf (Entregable 2)
+        |-- Pendiente: for (Entregable 2)
+        |-- Pendiente: while (Entregable 2)
+        |-- Pendiente: if (Entregable 2)
+        `-- Asignacion
+            |-- ID: n  <ID, 1>
+            `-- NUM_INT: 7
+--- Errores sintacticos (0) ---
+--- Avisos (4) ---
+Linea 5, Columna 5: La sentencia 'scanf' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+Linea 6, Columna 5: La sentencia 'for' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+Linea 9, Columna 5: La sentencia 'while' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+Linea 10, Columna 5: La sentencia 'if' corresponde al Entregable 2: se omite (su sintaxis aun no se verifica)
+ANALISIS SINTACTICO CORRECTO: el programa cumple la gramatica de LP.

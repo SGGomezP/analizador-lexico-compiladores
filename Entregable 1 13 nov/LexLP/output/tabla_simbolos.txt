@@ -1,0 +1,10 @@
+Posicion	Identificador
+0		suma
+1		a
+2		b
+3		notas
+4		i
+5		total
+6		promedio
+7		letra
+8		aprobado

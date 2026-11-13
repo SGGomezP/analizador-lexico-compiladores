@@ -1,0 +1,22 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (16 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: int
+    |-- ID: suma  <ID, 0>
+    |-- Parametros
+    |   |-- Parametro
+    |   |   |-- Tipo: int
+    |   |   `-- ID: a  <ID, 1>
+    |   `-- Parametro
+    |       |-- Tipo: int
+    |       `-- ID: b  <ID, 2>
+    `-- Bloque
+        `-- Return
+            `-- Op: +
+                |-- ID: a  <ID, 1>
+                `-- ID: b  <ID, 2>
+--- Errores sintacticos (1) ---
+Linea 3, Columna 2: El programa no tiene la funcion 'main' (ej: void main() { ... })
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 1 error sintactico.

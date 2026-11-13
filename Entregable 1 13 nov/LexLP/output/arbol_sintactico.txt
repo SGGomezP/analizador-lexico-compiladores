@@ -1,0 +1,70 @@
+Programa
+|-- Funcion
+|   |-- Tipo: int
+|   |-- ID: suma  <ID, 0>
+|   |-- Parametros
+|   |   |-- Parametro
+|   |   |   |-- Tipo: int
+|   |   |   `-- ID: a  <ID, 1>
+|   |   `-- Parametro
+|   |       |-- Tipo: int
+|   |       `-- ID: b  <ID, 2>
+|   `-- Bloque
+|       `-- Return
+|           `-- Op: +
+|               |-- ID: a  <ID, 1>
+|               `-- ID: b  <ID, 2>
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       |-- ID: notas  <ID, 3>
+        |       `-- Tamano: 5
+        |-- Declaracion
+        |   |-- Tipo: int
+        |   `-- Variable
+        |       `-- ID: i  <ID, 4>
+        |-- Declaracion
+        |   |-- Tipo: float
+        |   `-- Variable
+        |       |-- ID: total  <ID, 5>
+        |       `-- Inicializacion
+        |           `-- NUM_DEC: 0.0
+        |-- Declaracion
+        |   |-- Tipo: float
+        |   `-- Variable
+        |       `-- ID: promedio  <ID, 6>
+        |-- Declaracion
+        |   |-- Tipo: char
+        |   `-- Variable
+        |       `-- ID: letra  <ID, 7>
+        |-- Declaracion
+        |   |-- Tipo: boolean
+        |   `-- Variable
+        |       `-- ID: aprobado  <ID, 8>
+        |-- Pendiente: for (Entregable 2)
+        |-- Asignacion
+        |   |-- ID: promedio  <ID, 6>
+        |   `-- Op: /
+        |       |-- ID: total  <ID, 5>
+        |       `-- NUM_INT: 5
+        |-- Asignacion
+        |   |-- ID: aprobado  <ID, 8>
+        |   `-- Op: ||
+        |       |-- Op: &&
+        |       |   |-- Op: >=
+        |       |   |   |-- ID: promedio  <ID, 6>
+        |       |   |   `-- NUM_DEC: 10.5
+        |       |   `-- Op: !=
+        |       |       |-- ID: promedio  <ID, 6>
+        |       |       `-- NUM_INT: 0
+        |       `-- OpUnario: !
+        |           `-- ID: aprobado  <ID, 8>
+        |-- Pendiente: while (Entregable 2)
+        |-- Pendiente: if (Entregable 2)
+        |-- Pendiente: println (Entregable 2)
+        `-- Return

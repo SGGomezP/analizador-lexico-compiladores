@@ -1,0 +1,11 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (6 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+--- Errores sintacticos (0) ---
+--- Avisos (0) ---
+ANALISIS SINTACTICO CORRECTO: el programa cumple la gramatica de LP.

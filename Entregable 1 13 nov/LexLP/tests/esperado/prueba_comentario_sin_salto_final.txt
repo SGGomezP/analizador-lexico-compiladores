@@ -1,0 +1,6 @@
+--- Tokens (5) ---
+<ID, 0> <=> <NUM_INT> <;> <COMENT>
+--- Tabla de simbolos (1) ---
+0 x
+--- Errores lexicos (0) ---
+ANALISIS LEXICO CORRECTO: no se encontraron errores lexicos.

@@ -1,0 +1,24 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (17 nodos) ---
+Programa
+|-- Funcion
+|   |-- Tipo: void
+|   |-- Nombre: main
+|   |-- Parametros
+|   `-- Bloque
+|       `-- Declaracion
+|           |-- Tipo: int
+|           `-- Variable
+|               |-- ID: x  <ID, 0>
+|               `-- Inicializacion
+|                   `-- NUM_INT: 1
+`-- Funcion
+    |-- Tipo: void
+    |-- ID: f  <ID, 1>
+    |-- Parametros
+    `-- Bloque
+--- Errores sintacticos (2) ---
+Linea 3, Columna 5: Falta '}' para cerrar el bloque abierto en la linea 1, columna 13 (aqui empieza otra funcion; en LP las funciones no se anidan)
+Linea 4, Columna 5: Se esperaba el tipo de retorno de una funcion (int, float, char, boolean o void), pero se encontro el identificador 'x' (en LP el programa es una secuencia de funciones)
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 2 errores sintacticos.

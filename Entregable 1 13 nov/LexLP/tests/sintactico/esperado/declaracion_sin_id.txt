@@ -1,0 +1,14 @@
+--- Errores lexicos previos: 0 ---
+--- Arbol sintactico (6 nodos) ---
+Programa
+`-- Funcion
+    |-- Tipo: void
+    |-- Nombre: main
+    |-- Parametros
+    `-- Bloque
+--- Errores sintacticos (3) ---
+Linea 2, Columna 9: Se esperaba un identificador en la declaracion, pero se encontro '='
+Linea 3, Columna 9: Se esperaba un identificador en la declaracion, pero se encontro el numero '7'
+Linea 4, Columna 11: Se esperaba un identificador en la declaracion, pero se encontro ','
+--- Avisos (0) ---
+ANALISIS SINTACTICO INCORRECTO: se encontraron 3 errores sintacticos.
